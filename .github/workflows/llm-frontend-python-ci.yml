@@ -13,6 +13,7 @@ on:
       - '.github/workflows/llm-frontend-python-ci.yml'
   workflow_dispatch:
 
+
 defaults:
   run:
     working-directory: llm-frontend-python
@@ -54,7 +55,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: darryl1975/llm-frontend-python
+          images: tanjiaze/llm-frontend-python
           tags: |
             type=sha
             type=ref,event=branch
